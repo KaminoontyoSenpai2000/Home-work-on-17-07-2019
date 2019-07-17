@@ -1,0 +1,616 @@
+.block {
+	height: 300px;
+}
+
+.img-little {
+	height: 200px;
+}
+
+/*Возможности SASS(.scss)!!!*/
+
+/*Основные параметры*/
+
+body {
+  margin: 0;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+ 
+.container-flex {
+	display: flex;
+} 
+
+.content-center {
+	display: flex;
+	justify-content: center;
+}
+
+/*Основные цвета шрифта (18 цветов)*/
+.color-red {
+	color: red;
+}
+
+.color-orange {
+	color: orange;
+}
+
+.color-green {
+	color: green;
+}
+
+.color-blue {
+	color: blue;
+}
+
+.color-yellow {
+	color: yellow;
+}
+
+.color-gold {
+	color: gold;
+}
+
+.color-silver {
+	color: silver;
+}
+
+.color-grey {
+	color: grey;
+}
+
+.color-pink {
+	color: pink;
+}
+
+.color-purple {
+	color: purple;
+}
+
+.color-white {
+	color: white;
+}
+
+.color-maroon {
+	color: maroon;
+}
+
+.color-black {
+	color: black;
+}
+
+.color-olive {
+	color: olive;
+}
+
+.color-lime {
+	color: lime;
+}
+
+.color-aqua {
+	color: aqua;
+}
+
+.color-teal {
+	color: teal;
+}
+
+.color-navy {
+	color: navy;
+}
+
+
+
+/*Основные цвета фона (18 цветов)*/
+
+.background-orange {
+	background-color: orange;
+}
+
+.background-red {
+	background-color: red;
+}
+
+.background-green {
+	background-color: green;
+}
+
+.background-blue {
+	background-color: blue;
+}
+
+.background-yellow {
+	background-color: yellow;
+}
+
+.background-gold {
+	background-color: gold;
+}
+
+.background-silver {
+	background-color: silver;
+}
+
+.background-grey {
+	background-color: grey;
+}
+
+.background-pink {
+	background-color: pink;
+}
+
+.background-purple {
+	background-color: purple;
+}
+
+.background-white {
+	background-color: white;
+}
+
+.background-black {
+	background-color: black;
+}
+
+.background-maroon {
+	background-color: maroon;
+}
+
+.background-olive {
+	background-color: olive;
+}
+
+.background-lime {
+	background-color: lime;
+}
+
+.background-aqua {
+	background-color: aqua;
+}
+
+.background-teal {
+	background-color: teal;
+}
+
+.background-navy {
+	background-color: navy;
+}
+
+
+
+/*Непосредственно сама flex-сетка*/
+
+@media (min-width: 1200px) {
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+    justify-content: center;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.visible-lg {
+		display: flex;
+}
+
+.visible-md {
+		display: none;
+}
+
+.visible-sm {
+		display: none;
+}
+
+.visible-xs {
+		display: none;
+}
+
+.hidden-lg {
+	display: none;
+}
+
+.hidden-md {
+	display: flex;
+}
+
+.hidden-sm {
+	display: flex;
+}
+
+.hidden-xs {
+	display: flex;
+}
+
+.col-lg-12 {
+	display: flex;
+	flex: 0 1 100%;
+}
+
+.col-lg-11 {
+	display: flex;
+	flex: 0 1 91.6666666667%;
+}
+
+.col-lg-10 {
+	display: flex;
+	flex: 0 1 83.3333333333%;
+}
+
+.col-lg-9 {
+	display: flex;
+	flex: 0 1 75%;
+}
+
+.col-lg-8 {
+	display: flex;
+	flex: 0 1 66.6666666667%;
+}
+
+.col-lg-7 {
+	display: flex;
+	flex: 0 1 58.3333333333%;
+}
+
+.col-lg-6 {
+	display: flex;
+	flex: 0 1 50%;
+}
+
+.col-lg-5 {
+	display: flex;
+	flex: 0 1 41.6666666667%;
+}
+
+.col-lg-4 {
+	display: flex;
+	flex: 0 1 33.3333333333%;
+}
+
+.col-lg-3 {
+	display: flex;
+	flex: 0 1 25%;
+}
+
+.col-lg-2 {
+	display: flex;
+	flex: 0 1 16.6666666667%;
+}
+
+.col-lg-1 {
+	display: flex;
+	flex: 0 1 8.33333333333%;
+}
+
+}
+
+@media (max-width: 1200px) {
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.visible-lg {
+	display: none;
+}
+
+.visible-md {
+	display: flex;
+}
+
+.visible-sm {
+	display: none;
+}
+
+.visible-xs {
+	display: none;
+}
+
+.hidden-lg {
+	display: flex;
+}
+
+.hidden-md {
+	display: none;
+}
+
+.hidden-sm {
+	display: flex;
+}
+
+.hidden-xs {
+	display: flex;
+}
+
+.col-md-12 {
+	flex: 0 1 100%;
+}
+
+.col-md-11 {
+	display: flex;
+	flex: 0 1 91.6666666667%;
+}
+
+.col-md-10 {
+	display: flex;
+	flex: 0 1 83.3333333333%;
+}
+
+.col-md-9 {
+	display: flex;
+	flex: 0 1 75%;
+}
+
+.col-md-8 {
+	display: flex;
+	flex: 0 1 66.6666666667%;
+}
+
+.col-md-7 {
+	display: flex;
+	flex: 0 1 58.3333333333%;
+}
+
+.col-md-6 {
+	display: flex;
+	flex: 0 1 50%;
+}
+
+.col-md-5 {
+	display: flex;
+	flex: 0 1 41.6666666667%;
+}
+
+.col-md-4 {
+	display: flex;
+	flex: 0 1 33.3333333333%;
+}
+
+.col-md-3 {
+	display: flex;
+	flex: 0 1 25%;
+}
+
+.col-md-2 {
+	display: flex;
+	flex: 0 1 16.6666666667%;
+}
+
+.col-md-1 {
+	display: flex;
+	flex: 0 1 8.33333333333%;
+}
+
+}
+
+@media (max-width: 992px) {
+
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.visible-lg {
+	display: none;
+}
+
+.visible-md {
+	display: none;
+}
+
+.visible-sm {
+	display: flex;
+}
+
+.visible-xs {
+	display: none;
+}
+
+.hidden-lg {
+	display: flex;
+}
+
+.hidden-md {
+	display: flex;
+}
+
+.hidden-sm {
+	display: none;
+}
+
+.hidden-xs {
+	display: flex;
+}
+
+.col-sm-12 {
+	display: flex;
+	flex: 0 1 100%;
+}
+
+.col-sm-11 {
+	display: flex;
+	flex: 0 1 91.6666666667%;
+}
+
+.col-sm-10 {
+	display: flex;
+	flex: 0 1 83.3333333333%;
+}
+
+.col-sm-9 {
+	display: flex;
+	flex: 0 1 75%;
+}
+
+.col-sm-8 {
+	display: flex;
+	flex: 0 1 66.6666666667%;
+}
+
+.col-sm-7 {
+	display: flex;
+	flex: 0 1 58.3333333333%;
+}
+
+.col-sm-6 {
+	display: flex;
+	flex: 0 1 50%;
+}
+
+.col-sm-5 {
+	display: flex;
+	flex: 0 1 41.6666666667%;
+}
+
+.col-sm-4 {
+	display: flex;
+	flex: 0 1 33.3333333333%;
+}
+
+.col-sm-3 {
+	display: flex;
+	flex: 0 1 25%;
+}
+
+.col-md-2 {
+	display: flex;
+	flex: 0 1 16.6666666667%;
+}
+
+.col-sm-1 {
+	display: flex;
+	flex: 0 1 8.33333333333%;
+}
+
+}
+
+@media (max-width: 768px) {
+
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+    float: left;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.visible-lg {
+	display: none;
+}
+
+.visible-md {
+	display: none;
+}
+
+.visible-sm {
+	display: none;
+}
+
+.visible-xs {
+	display: flex;
+}
+
+.hidden-lg {
+	display: flex;
+}
+
+.hidden-md {
+	display: flex;
+}
+
+.hidden-sm {
+	display: flex;
+}
+
+.hidden-xs {
+	display: none;
+}
+
+.col-xs-12 {
+	display: flex;
+	flex: 0 1 100%;
+}
+
+.col-xs-11 {
+	display: flex;
+	flex: 0 1 91.6666666667%;
+}
+
+.col-xs-10 {
+	display: flex;
+	flex: 0 1 83.3333333333%;
+}
+
+.col-xs-9 {
+	display: flex;
+	flex: 0 1 75%;
+}
+
+.col-xs-8 {
+	display: flex;
+	flex: 0 1 66.6666666667%;
+}
+
+.col-xs-7 {
+	display: flex;
+	flex: 0 1 58.3333333333%;
+}
+
+.col-xs-6 {
+	display: flex;
+	flex: 0 1 50%;
+}
+
+.col-xs-5 {
+	display: flex;
+	flex: 0 1 41.6666666667%;
+}
+
+.col-xs-4 {
+	display: flex;
+	flex: 0 1 33.3333333333%;
+}
+
+.col-xs-3 {
+	display: flex;
+	flex: 0 1 25%;
+}
+
+.col-xs-2 {
+	display: flex;
+	flex: 0 1 16.6666666667%;
+}
+
+.col-xs-1 {
+	display: flex;
+	flex: 0 1 8.33333333333%;
+}
+
+}
